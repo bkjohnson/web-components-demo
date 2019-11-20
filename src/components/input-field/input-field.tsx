@@ -13,10 +13,15 @@ export class InputField {
   @Prop() label: string;
 
 
+  private doSomething(): number {
+    return Math.random()
+  }
+
   render() {
     return <div>
       <label>{this.label}</label>
       <input />
+      <span> Your random number is {this.doSomething()}</span>
       </div>;
   }
 }
