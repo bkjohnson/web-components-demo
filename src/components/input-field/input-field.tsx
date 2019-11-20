@@ -22,6 +22,12 @@ export class InputField {
       <label>{this.label}</label>
       <input />
       <span> Your random number is {this.doSomething()}</span>
+
+      <slot></slot>
+
+      <div class="sidebar">
+        <slot  name="right"></slot>
+      </div>
       </div>;
   }
 }

@@ -4,6 +4,16 @@
   background: orange;
 }
 
+::slotted(*) {
+  color: purple;
+}
+
+.sidebar {
+  display: flex;
+  flex-direction: row-reverse;
+  font-size: 1.5em;
+}
+
 label {
   font-size: var(--label-size);
 }
