@@ -8,11 +8,21 @@
   <script type="module" src="/build/web-components-demo.esm.js"></script>
   <script nomodule src="/build/web-components-demo.js"></script>
 
+  <style type="text/css">
+    label {
+      font-size: 4em;
+    }
+    .big {
+      --label-size: 4em;
+    }
+  </style>
 </head>
 <body>
 
   <!-- <my-component first="Stencil" last="'Don't call me a framework' JS"></my-component> -->
+  <label>Plain old label</label>
   <input-field label="Name please"></input-field>
+  <input-field class="big" label="I'm big"></input-field>
 
 </body>
 </html>

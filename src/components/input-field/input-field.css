@@ -3,3 +3,7 @@
   padding: 1em;
   background: orange;
 }
+
+label {
+  font-size: var(--label-size);
+}
